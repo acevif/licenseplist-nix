@@ -1,0 +1,17 @@
+{
+  "licenseplist-3_27_1-darwin": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "licenseplist-3_27_1-darwin",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "name": null,
+      "sha256": "sha256-oCBAypheTrovfKGJxgxFiACWk9zbZwIaA/MEmL+CA7U=",
+      "type": "url",
+      "url": "https://github.com/mono0926/LicensePlist/releases/download/3.27.1/portable_licenseplist.zip"
+    },
+    "version": "3.27.1"
+  }
+}
