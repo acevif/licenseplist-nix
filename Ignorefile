@@ -1,0 +1,5 @@
+gitignore.io:
+  - direnv
+
+github:
+  - Nix
