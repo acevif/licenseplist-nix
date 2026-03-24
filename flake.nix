@@ -3,7 +3,15 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    flake-parts.url = "github:hercules-ci/flake-parts";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+    ignore = {
+      url = "github:acevif/ignore";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -15,14 +23,20 @@
       ];
 
       perSystem =
-        { pkgs, system, ... }:
+        {
+          pkgs,
+          system,
+          inputs',
+          ...
+        }:
         let
           mkLicenseplist = args: pkgs.callPackage ./packages/mkLicenseplist.nix args;
           darwinPlatforms = [
             "x86_64-darwin"
             "aarch64-darwin"
           ];
-          mkVersion = versionId:
+          mkVersion =
+            versionId:
             mkLicenseplist {
               inherit versionId;
               platforms = darwinPlatforms;
@@ -51,7 +65,10 @@
           formatter = pkgs.nixfmt;
 
           devShells.default = pkgs.mkShell {
-            packages = [ pkgs.nvfetcher ];
+            packages = [
+              inputs'.ignore.packages.default
+              pkgs.nvfetcher
+            ];
           };
         };
     };
