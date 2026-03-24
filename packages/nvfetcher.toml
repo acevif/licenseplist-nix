@@ -1,3 +1,23 @@
+[licenseplist-3_25_0-darwin]
+src.manual = "3.25.0"
+fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"
+
+[licenseplist-3_25_1-darwin]
+src.manual = "3.25.1"
+fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"
+
+[licenseplist-3_26_0-darwin]
+src.manual = "3.26.0"
+fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"
+
+[licenseplist-3_27_0-darwin]
+src.manual = "3.27.0"
+fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"
+
 [licenseplist-3_27_1-darwin]
 src.manual = "3.27.1"
+fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"
+
+[licenseplist-3_27_2-darwin]
+src.manual = "3.27.2"
 fetch.url = "https://github.com/mono0926/LicensePlist/releases/download/$ver/portable_licenseplist.zip"

@@ -1,17 +1,92 @@
 {
-  "licenseplist-3_27_1-darwin": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "licenseplist-3_27_1-darwin",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "name": null,
-      "sha256": "sha256-oCBAypheTrovfKGJxgxFiACWk9zbZwIaA/MEmL+CA7U=",
-      "type": "url",
-      "url": "https://github.com/mono0926/LicensePlist/releases/download/3.27.1/portable_licenseplist.zip"
+    "licenseplist-3_25_0-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_25_0-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-H79jaa4KODPb4qGEDwHoa/Ndyj8U0z+RyowkvnS/ayk=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.25.0/portable_licenseplist.zip"
+        },
+        "version": "3.25.0"
     },
-    "version": "3.27.1"
-  }
+    "licenseplist-3_25_1-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_25_1-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-oxbarHYUyZ34kN5bUC1EHs/SWG7snjMS2pUOUtnr1AU=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.25.1/portable_licenseplist.zip"
+        },
+        "version": "3.25.1"
+    },
+    "licenseplist-3_26_0-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_26_0-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-QRSwM1cw6DER+RMfiY8YmD5IbvlGoQhpg/3b7AwROK4=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.26.0/portable_licenseplist.zip"
+        },
+        "version": "3.26.0"
+    },
+    "licenseplist-3_27_0-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_27_0-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-i7HdLF8sUEy/GmvaqAAVFpxR8mh0hBxBkRz6ti2QIU4=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.27.0/portable_licenseplist.zip"
+        },
+        "version": "3.27.0"
+    },
+    "licenseplist-3_27_1-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_27_1-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-oCBAypheTrovfKGJxgxFiACWk9zbZwIaA/MEmL+CA7U=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.27.1/portable_licenseplist.zip"
+        },
+        "version": "3.27.1"
+    },
+    "licenseplist-3_27_2-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "licenseplist-3_27_2-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-v+FeIbRxHwvD5xK4IDff9fdXbPssDNtRovOKOevV26Q=",
+            "type": "url",
+            "url": "https://github.com/mono0926/LicensePlist/releases/download/3.27.2/portable_licenseplist.zip"
+        },
+        "version": "3.27.2"
+    }
 }
