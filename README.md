@@ -115,5 +115,6 @@ nix run github:acevif/licenseplist-nix#licenseplist -- --version
 - `licenseplist_3_12` - 3.12.x latest (`x86_64-darwin`, `aarch64-darwin`)
 - `licenseplist_3_11` - 3.11.x latest (`x86_64-darwin`, `aarch64-darwin`)
 - `licenseplist_3_0` - 3.0.x latest (`x86_64-darwin`, `aarch64-darwin`)
+- `licenseplist_3` - 3.x.x latest (`x86_64-darwin`, `aarch64-darwin`)
 - `licenseplist` - latest (`x86_64-darwin`, `aarch64-darwin`)
 - `default` - latest (`x86_64-darwin`, `aarch64-darwin`)

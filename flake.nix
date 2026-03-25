@@ -406,6 +406,7 @@
             licenseplist_3_25 = licenseplist_3_25_1;
             licenseplist_3_26 = licenseplist_3_26_0;
             licenseplist_3_27 = licenseplist_3_27_2;
+            licenseplist_3 = licenseplist_3_27_2;
             licenseplist = licenseplist_3_27_2;
             default = licenseplist_3_27_2;
           };
