@@ -3,3 +3,5 @@ gitignore.io:
 
 github:
   - Nix
+paths-ignore:
+  - .env.local

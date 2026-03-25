@@ -26,3 +26,4 @@ result-*
 
 ### Project specific settings ###
 
+.env.local
