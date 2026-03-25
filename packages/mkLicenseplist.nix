@@ -25,8 +25,10 @@ stdenv.mkDerivation {
     mkdir -p "$out/bin"
     install -m755 license-plist "$out/bin/license-plist"
 
-    mkdir -p "$out/share/licenses/licenseplist"
-    install -m644 LICENSE "$out/share/licenses/licenseplist/LICENSE"
+    if [ -f LICENSE ]; then
+      mkdir -p "$out/share/licenses/licenseplist"
+      install -m644 LICENSE "$out/share/licenses/licenseplist/LICENSE"
+    fi
 
     runHook postInstall
   '';
