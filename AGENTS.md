@@ -2,9 +2,11 @@
 
 ## Build / Development Commands
 
+Commands below assume the dev shell is already active via `direnv`. If not, enter it with `nix develop`.
+
 ```bash
 # Regenerate source metadata
-nix develop --command nvfetcher -c packages/nvfetcher.toml -o packages/_sources
+nvfetcher -c packages/nvfetcher.toml -o packages/_sources
 
 # Validate all supported platforms
 nix flake check --all-systems
@@ -19,7 +21,7 @@ The primary task in this repository is packaging new LicensePlist releases.
 
 1. Check available releases: `gh release list --repo mono0926/LicensePlist`
 2. Add a new `darwin` entry to `packages/nvfetcher.toml`
-3. Regenerate `packages/_sources/`: `nix develop --command nvfetcher -c packages/nvfetcher.toml -o packages/_sources`
+3. Regenerate `packages/_sources/`: `nvfetcher -c packages/nvfetcher.toml -o packages/_sources`
 4. Add the package to `flake.nix` and update aliases
 5. Update `README.md`
 6. Validate all platforms: `nix flake check --all-systems`
@@ -27,13 +29,18 @@ The primary task in this repository is packaging new LicensePlist releases.
 
 ## Naming Conventions
 
-- Package names in `flake.nix` use underscore separators, for example `licenseplist_3_27_2`
+- Package names
+  - Use underscores instead of dots in versioned package names
+  - Example: `licenseplist_3_27_2`
 
-## Alias Conventions
+### Alias Conventions
 
-- `licenseplist_X_Y` = latest patch of that minor series
-- `licenseplist_X` = latest release of that major series
-- `licenseplist` / `default` = overall latest release
+- `licenseplist_X_Y`
+  - Alias to latest patch release of that minor series
+  - Example: `licenseplist_3_23` -> `3.23.4`
+- `licenseplist_X`
+  - Alias to latest release of that major series
+  - Example: `licenseplist_3` -> `3.x.x`
 
 ## Notes
 
